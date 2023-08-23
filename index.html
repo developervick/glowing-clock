@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+        <!--Clock elemenet-->
+        <div id="clock" class="flex justify-center p-2">
+            <div class="bg-gray-900 text-3xl rounded-full text-white p-2">
+                <div class="ring-4 flex items-center ring-white rounded-full w-[250px] h-[250px]">
+    
+                    <!--second hand-->
+                    <div id="second" class=" absolute z-20 h-[3px] w-[250px] flex rounded-md">
+                        <div class="h-full w-[105px]"></div>
+                        <div class=" glow-red h-full w-[115px] rounded-md "></div>
+                    </div>
+    
+                    <!--minute hand-->
+                    <div id="minute" class="absolute z-10 h-[7px] w-[250px] flex rounded-md">
+                        <div class="h-full w-[105px]"></div>
+                        <div class="h-full w-[110px] rounded-md glow-green text-[3px] text-center"></div>
+                    </div>
+    
+                    <!--hour hand-->
+                    <div id="hour" class="absolute z-0 h-[8px] w-[250px] flex rounded-md">
+                        <div class="h-full w-[105px]"></div>
+                        <div class="h-full w-[95px] rounded-md glow-amber"></div>
+                    </div>
+    
+                    <!--clock nos positioned-->
+                    <div class="absolute transform rotate-90 w-[250px] h-fit flex justify-between">
+                        <span class="transform rotate-[270deg]">12</span>
+                        <span class="transorm rotate-[-90deg] mr-2">6</span>
+                    </div>
+                    <div class="absolute transform rotate-[30deg] w-[250px] px-2 h-fit flex justify-between">
+                        <span class="transform rotate-[-30deg]">10</span>
+                        <span class="transform rotate-[-30deg]">4</span>
+                    </div>
+                    <div class="absolute transform rotate-[60deg] w-[250px] h-fit flex justify-between">
+                        <span class="transform rotate-[-60deg] ml-1">11</span>
+                        <span class="transform rotate-[-60deg] mr-2">5</span>
+                    </div>
+                    <div class="absolute w-[250px] h-fit flex justify-between px-2">
+                        <span>9</span>
+                        <span>3</span>
+                    </div>
+                    <div class="absolute transform rotate-[150deg] w-[250px] px-2 h-fit flex justify-between">
+                        <span class="transform rotate-[210deg]">2</span>
+                        <span class="transform rotate-[210deg]">8</span>
+                    </div>
+                    <div class="absolute transform rotate-[120deg] px-2 w-[250px] h-fit flex justify-between">
+                        <span class="transform rotate-[-120deg]">1</span>
+                        <span class="transform rotate-[-120deg]">7</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+<script type="module" src="clock.js"></script>
+</body>
+</html>
